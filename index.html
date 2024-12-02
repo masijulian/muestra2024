@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra Escolar 2024</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container-fluid">
+            <img class="Logo-Piaget-b" src="/img/Logo-Piaget-b&w.png" alt=""><a class="navbar-brand fw-bold texto-piaget-header" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="primero.html">Primero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="segundo.html">Segundo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tercero.html">Tercero</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Bienvenidos a la Muestra Escolar 2024</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Explora los trabajos realizados por los estudiantes de cada curso.</p>
+        </div>
+    </header>
+
+    <!-- Sección de enlaces a los cursos -->
+    <section class="container mt-5">
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="imagen-curso1.jpg" class="card-img-top" alt="Curso 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Primero</h5>
+                        <p class="card-text">Proyectos realizados por los estudiantes del primer curso.</p>
+                        <a href="primero.html" class="btn btn-primary">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="imagen-curso2.jpg" class="card-img-top" alt="Curso 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Segundo</h5>
+                        <p class="card-text">Proyectos realizados por los estudiantes del segundo curso.</p>
+                        <a href="segundo.html" class="btn btn-primary">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm">
+                    <img src="imagen-curso3.jpg" class="card-img-top" alt="Curso 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tercero</h5>
+                        <p class="card-text">Proyectos realizados por los estudiantes del tercer curso.</p>
+                        <a href="tercero.html" class="btn btn-primary">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Muestra Escolar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

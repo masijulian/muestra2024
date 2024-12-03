@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Boulder';
+    src: url('./fonts/Boulder-Bold.ttf') format('truetype');
+  }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -23,6 +28,84 @@ nav ul li a {
     color: #4CAF50;
     text-decoration: none;
 }
+
+.piaget-title{
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    background-color: #f14d63;
+    padding: 10px 30px;
+    color: white;
+}
+
+
+.test-title{
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.hidden-button {
+    visibility: hidden; /* Oculta el botón inicialmente */
+    opacity: 0;         /* Hace que el botón sea completamente invisible */
+    transition: opacity 0.5s ease; /* Transición suave cuando se hace visible */
+}
+
+.hidden-button.visible {
+    visibility: visible; /* Hace que el botón sea visible */
+    opacity: 1;          /* Aplica la opacidad completa */
+}
+
+
+.test-title h1{
+    font-family: 'Boulder';
+    font-size: 8rem;
+    color: black;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+}
+
+.test-title h1:hover{
+    transform: translateX(10px);
+}
+
+.title-with-button {
+    display: inline-flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 300px; /* Espaciado entre el texto y el botón */
+}
+
+.boton-index{
+    font-family: 'Poppins', sans-serif  !important;
+    font-size: 1.4rem !important;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #d9534f; /* Cambia el color al pasar el mouse */
+    color: white;
+}
+
+.index-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Alinea las imágenes horizontalmente */
+    gap: 10px; /* Espaciado entre imágenes */
+    background-color: #f8f7ec; /* Color de fondo para evitar huecos */
+    padding: 10px 0;
+}
+
+.index-footer img {
+    max-width: 50%; /* Ajusta este valor si quieres cambiar el tamaño relativo */
+    height: auto;
+    object-fit: cover; /* Asegura que las imágenes se vean completas */
+}
+
+
 
 .Logo-Piaget-b{
     max-width: 90px;

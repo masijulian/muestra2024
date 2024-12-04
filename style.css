@@ -55,13 +55,27 @@ nav ul li a {
 }
 
 
-.test-title h1{
-    font-family: 'Boulder';
+.test-title h1 {
+    font-family: 'Boulder', sans-serif;
     font-size: 8rem;
     color: black;
     text-align: left;
-    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Oculta caracteres adicionales durante la animación */
+    white-space: nowrap; /* Evita saltos de línea */
+    border-right: 4px solid black; /* Cursor de máquina */
+    animation: blink-caret 0.7s step-end infinite;
+    display: inline-block; /* Asegura que el ancho sea calculable */
 }
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
 
 .test-title h1:hover{
     transform: translateX(10px);

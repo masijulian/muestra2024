@@ -9,12 +9,23 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 header {
-    background: linear-gradient(to right, rgb(43 160 77) 60%, rgb(233, 203, 33));
     color: white;
     text-align: center;
     padding: 10px;
+    height: 350px;
 }
+
+.titulo-cursos{
+    background-image: url(./img/VHSBACKGROUND-ezgif.com-video-to-gif-converter.gif) !important;
+    background-size: cover !important;
+}
+
+
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -40,7 +51,7 @@ nav ul li a {
 
 .test-title{
     justify-self: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .hidden-button {
@@ -60,11 +71,6 @@ nav ul li a {
     font-size: 8rem;
     color: black;
     text-align: left;
-    overflow: hidden; /* Oculta caracteres adicionales durante la animación */
-    white-space: nowrap; /* Evita saltos de línea */
-    border-right: 4px solid black; /* Cursor de máquina */
-    animation: blink-caret 0.7s step-end infinite;
-    display: inline-block; /* Asegura que el ancho sea calculable */
 }
 
 @keyframes blink-caret {
@@ -252,3 +258,6 @@ h1.animate__fadeIn, h2.animate__fadeIn {
     transition: outline 0.1s ease-in-out;
 }
 
+.titulo-cursos-texto > h1, .titulo-cursos-texto > p {
+    text-shadow: 1px 1px 3px black;
+}

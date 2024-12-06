@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muestra Escolar 2024</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Enlace al CSS de Bootstrap -->
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Enlace a Animate.css -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+        <!-- Estilos personalizados -->
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container-fluid">
+                <a href="index.html"> <img class="Logo-Piaget-b" src="/img/Logo-Piaget-b&w.png" alt="" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="primero.html">Primero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="segundo.html">Segundo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tercero.html">Tercero</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     
     <!-- Sección de enlaces a los cursos -->
     <section class="container mt-5">
@@ -13,7 +44,7 @@
             <!-- Tarjeta 1 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm">
-                    <img src="imagen-curso1.jpg" class="card-img-top" alt="Curso 1">
+                    <video src="./vid/ES1.mp4" class="card-img-top" alt="Curso 1" autoplay muted loop></video>
                     <div class="card-body text-center">
                         <h5 class="card-title">Primero</h5>
                         <p class="card-text">Proyectos realizados por los estudiantes del primer curso.</p>
@@ -24,7 +55,7 @@
             <!-- Tarjeta 2 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm">
-                    <img src="imagen-curso2.jpg" class="card-img-top" alt="Curso 2">
+                    <video src="./vid/ES2.mp4" class="card-img-top" alt="Curso 1" autoplay muted loop></video>
                     <div class="card-body text-center">
                         <h5 class="card-title">Segundo</h5>
                         <p class="card-text">Proyectos realizados por los estudiantes del segundo curso.</p>
@@ -35,7 +66,7 @@
             <!-- Tarjeta 3 -->
             <div class="col-md-4">
                 <div class="card border-0 shadow-sm">
-                    <img src="imagen-curso3.jpg" class="card-img-top" alt="Curso 3">
+                    <video src="./vid/ES3.mp4" class="card-img-top" alt="Curso 1" autoplay muted loop></video>
                     <div class="card-body text-center">
                         <h5 class="card-title">Tercero</h5>
                         <p class="card-text">Proyectos realizados por los estudiantes del tercer curso.</p>
@@ -47,10 +78,8 @@
     </section>
 
     <!-- Pie de página -->
-    <footer class="bg-dark text-light py-3 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">© 2024 Muestra Escolar. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+        
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
 </html>
